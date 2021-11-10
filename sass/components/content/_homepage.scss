@@ -1,0 +1,55 @@
+.page-id-10{
+    #intro-para{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    #front-page-featured, #contact-me{
+        a{
+            color: $color__6;
+            text-decoration: none;
+            &:hover{
+                color:#06461D;
+            }
+        }
+    }
+    #front-page-featured{
+        article{
+            margin-bottom: 2rem;
+            text-align: center;
+            @media(min-width:$breakpoint-desktop){
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+        }
+        .project-card-link{
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            background-color: #9EEFF5;
+            border-radius: 25px;
+            width: 6rem;
+            padding: .5rem;
+        }
+    }
+    #all-works{
+        margin-top: 1.5rem;
+        text-align: center;
+        a{
+            padding: 1rem;
+            background-color: #00E7EB;
+            border-radius: 25px;
+        }
+    }
+    #contact-me{
+        text-align: center;
+        margin-bottom: 2rem;
+        h3{
+            margin: 0 auto;
+            background-color: #00E7EB;
+            width: 10rem;
+            border-radius: 35px;
+            padding: 1.2rem;
+        }
+    }
+}

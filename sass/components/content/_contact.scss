@@ -1,0 +1,45 @@
+.page-id-29{
+    #contact-before{
+        a{
+            text-decoration: none;
+            h2{
+                border: 1px solid black;
+                border-radius: 10px;
+                padding: 2rem;
+                color: $color__6;
+                margin-top: .5rem;
+            }
+        }
+    }
+    span{
+        max-width: 25%;
+    }
+    input{
+        max-width: 50%;
+    }
+    @media(min-width:$breakpoint-tablet){
+        #contact-before{
+            max-width: 50%;
+            margin: 0 auto;
+            a{
+                padding: 2rem;
+            }
+            h2{
+                transition: 1s;
+                &:hover{
+                    color: white;
+                    background-color: $color__6;
+                    transition: 1s;
+                    box-shadow: rgba(92, 225, 230, 0.1) 0px 10px 20px, rgba(92, 225, 230, 0.3) 0px 10px 10px;
+                }
+            }
+        }
+        textarea{
+            width: 70%;
+        }
+        .wpcf7{
+            max-width: 60rem;
+            margin: 0 auto;
+        }
+    }
+}

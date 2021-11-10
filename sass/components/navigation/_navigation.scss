@@ -1,0 +1,188 @@
+.main-navigation {
+	display: block;
+	width: 100%;
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 100%;
+			left: -999em;
+			z-index: 99999;
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+
+				&:hover > ul,
+				&.focus > ul {
+					display: block;
+					left: auto;
+				}
+			}
+
+			a {
+				width: 200px;
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+
+	li {
+		position: relative;
+
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+
+	.menu-toggle {
+		display: none;
+	}
+
+	.main-navigation ul {
+		display: flex;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+	}
+
+	.nav-links {
+		display: flex;
+	}
+
+	.nav-previous {
+		flex: 1 0 50%;
+	}
+
+	.nav-next {
+		text-align: end;
+		flex: 1 0 50%;
+	}
+}
+
+#masthead{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 70px;
+	background-color: $color__2;
+	z-index: 9999999;
+
+	.site-branding{
+		max-width: 8rem;
+		margin: 0 auto;
+		@media(min-width:$breakpoint-tablet){
+			align-items: initial;
+		}
+	}
+
+	#site-navigation{
+		position: fixed;
+		bottom: 0;
+		z-index: 9999999999;
+
+		.menu-toggle{
+			display: none;
+		}
+		#primary-menu{
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+
+			li{
+				text-align: center;
+				background-color: $color__2;
+				@media(min-width:$breakpoint-mobile){
+					margin: .25rem;
+				}
+				a{
+					// padding: .35rem .15rem;
+					padding: .8rem;
+					@media(min-width: $breakpoint-mobile){
+						padding: 1rem;
+						transition: .5s;
+						&:hover{
+							box-shadow:
+							1px 1px $color__5,
+							2px 2px $color__5,
+							3px 3px $color__5;
+						transition: 0.5s;
+						}
+					}
+				}
+			}
+			@media(min-width:$breakpoint-mobile){
+				margin-right: 1rem;
+			}
+		}
+		
+	}
+
+	.menu-toggle{
+		position: absolute;
+		right: 0;
+		bottom: 6.5rem;
+		border: none;
+	}
+	@media(min-width:$breakpoint-mobile){
+		display: flex;
+		justify-content: space-between;
+		#site-navigation{
+			position: initial;
+			bottom: initial;
+			align-self: center;
+			width: initial;
+		}
+		.site-branding{
+			margin: 0 2rem;
+		}
+	}
+}

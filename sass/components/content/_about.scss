@@ -1,0 +1,26 @@
+.page-id-25 {
+    figure{
+        text-align: center;
+    }
+    #toolkit{
+        text-align: center;
+
+        h3{
+            width: 10rem;
+            margin: 1rem auto;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        #toolkit-wrapper{
+            @media(min-width:$breakpoint-mobile){
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+    @media(min-width:$breakpoint-mobile){
+        #about-steffen, #toolkit{
+            @include middle-column;
+        }
+    }
+}

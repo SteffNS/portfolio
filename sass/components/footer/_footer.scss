@@ -1,0 +1,33 @@
+footer{
+    background-color: $color__5;
+    .site-info{
+        color: $color__link;
+        padding-top: .2rem;
+        text-align: center;
+    }
+    #footer-links{
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 4rem;
+        @media(min-width:$breakpoint-mobile){
+            padding-bottom: 2rem;
+        }
+        a{
+            text-decoration: none;
+            padding: 1rem;
+            transition: .5s;
+            &:hover{
+                box-shadow:
+                    1px 1px $color__main,
+                    2px 2px $color__main,
+                    3px 3px $color__main;
+                transition: 0.5s;
+            }
+        }
+    }
+    @media(min-width:$breakpoint-mobile){
+        position: absolute;
+        right: 0;
+        left: 0;
+    }
+}
