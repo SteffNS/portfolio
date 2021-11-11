@@ -22,5 +22,8 @@
         #about-steffen, #toolkit{
             @include middle-column;
         }
+        p{
+            margin: 0 1rem;
+        }
     }
 }
