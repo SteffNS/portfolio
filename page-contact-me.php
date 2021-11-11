@@ -30,7 +30,7 @@ get_header();
 				?>
 			</div>
 			<section id='contact-before'>
-				<a href="mailto:someone@example.com">
+				<a href="mailto:snevessilva1@my.bcit.ca">
 					<h2>Fill out the form or email me!</h2>
 				</a>
 			</section>
