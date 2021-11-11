@@ -785,7 +785,7 @@ textarea {
 	}
 }
 #masthead #site-navigation #primary-menu li a {
-	padding: 0.8rem;
+	padding: 1rem;
 }
 @media (min-width: 640px) {
 	#masthead #site-navigation #primary-menu li a {
