@@ -57,6 +57,7 @@
         .list-work-item{
             @media(min-width: $breakpoint-mobile){
                 border-bottom: none;
+                margin: 0 2rem;
             }
         }
     }
