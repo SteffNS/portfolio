@@ -483,6 +483,9 @@ body {
 		margin: 0;
 	}
 }
+#primary p {
+	margin: 1rem;
+}
 
 hr {
 	background-color: #ccc;
@@ -1048,6 +1051,9 @@ footer #footer-links a:hover {
 .page-id-25 figure {
 	text-align: center;
 }
+.page-id-25 #about-steffen p {
+	margin: 2rem 1rem;
+}
 .page-id-25 #toolkit {
 	text-align: center;
 }
@@ -1170,10 +1176,12 @@ footer #footer-links a:hover {
 }
 .single-portfolio_work #dev-tool, .single-portfolio_work #dev-lang {
 	margin: 1rem;
+	margin-top: 5rem;
+	margin-bottom: 2.5rem;
 }
 @media (min-width: 640px) {
 	.single-portfolio_work #dev-tool, .single-portfolio_work #dev-lang {
-		margin: 0 auto;
+		margin: 2rem auto;
 	}
 }
 .single-portfolio_work .tech-logos {
@@ -1212,6 +1220,7 @@ footer #footer-links a:hover {
 	width: 5rem;
 }
 .single-portfolio_work #work-info {
+	margin: 5rem 1rem;
 	margin: 1rem;
 }
 .single-portfolio_work #work-info h3 {
@@ -1224,7 +1233,7 @@ footer #footer-links a:hover {
 }
 .single-portfolio_work #work-info .acf-work-field {
 	max-width: 70rem;
-	margin: 0 auto;
+	margin: 1.5rem auto;
 }
 .single-portfolio_work #tools {
 	border-top: 1px solid black;
