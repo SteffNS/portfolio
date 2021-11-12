@@ -1178,18 +1178,19 @@ footer #footer-links a:hover {
 .single-portfolio_work #dev-tool, .single-portfolio_work #dev-lang {
 	margin: 1rem;
 	margin-top: 5rem;
-	margin-bottom: 2.5rem;
+	margin-bottom: 4.5rem;
 }
 @media (min-width: 640px) {
 	.single-portfolio_work #dev-tool, .single-portfolio_work #dev-lang {
 		margin: 2rem auto;
+		margin-bottom: 4.5rem;
 	}
 }
 .single-portfolio_work .tech-logos {
-	border-radius: 12px;
+	border-radius: 40px;
 	border: 2px solid #3D3D3D;
 	margin: 0 1rem;
-	box-shadow: rgba(92, 225, 230, 0.1) 0px 10px 20px, rgba(92, 225, 230, 0.3) 0px 6px 6px;
+	box-shadow: rgba(92, 225, 230, 0.1) 10px 10px 60px 25px, rgba(92, 225, 230, 0.3) 10px 6px 60px 15px;
 }
 @media (min-width: 640px) {
 	.single-portfolio_work .tech-logos {

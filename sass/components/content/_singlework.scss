@@ -33,16 +33,17 @@
     #dev-tool, #dev-lang{
         margin: 1rem;
         margin-top: 5rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 4.5rem;
         @media(min-width:$breakpoint-mobile){
             margin: 2rem auto;
+            margin-bottom: 4.5rem;
         }
     }
     .tech-logos{
-        border-radius: 12px;
+        border-radius: 40px;
         border: 2px solid $color__6;
         margin: 0 1rem;
-        box-shadow: rgba(92, 225, 230, 0.1) 0px 10px 20px, rgba(92, 225, 230, 0.3) 0px 6px 6px;
+        box-shadow: rgba(92, 225, 230, 0.1) 10px 10px 60px 25px, rgba(92, 225, 230, 0.3) 10px 6px 60px 15px;
         @media(min-width:$breakpoint-mobile){
             max-width: 40rem;
             margin: 0 auto;
