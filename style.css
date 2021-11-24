@@ -543,11 +543,13 @@ table {
 	position: relative;
 }
 #banner-wrapper h1 {
+	z-index: 99999;
 	position: absolute;
 	color: white;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	text-shadow: -1px -1px 0 #1A1A1A, 1px -1px 0 #1A1A1A, -1px 1px 0 #1A1A1A, 1px 1px 0 #1A1A1A;
 }
 @media (min-width: 800px) {
 	#banner-wrapper h1 {
@@ -562,6 +564,7 @@ table {
 	   object-fit: cover;
 	height: 100vh;
 	width: 100vw;
+	filter: brightness(50%);
 }
 
 /* Links
@@ -1052,12 +1055,13 @@ footer #footer-links a:hover {
 	margin: 2rem 1rem;
 }
 .page-id-25 #toolkit {
-	text-align: center;
+	padding-bottom: 3rem;
 }
 .page-id-25 #toolkit p {
 	margin: 1rem;
 }
 .page-id-25 #toolkit h3 {
+	text-align: center;
 	width: 10rem;
 	margin: 1rem auto;
 	border-left: 1px solid black;
@@ -1067,6 +1071,45 @@ footer #footer-links a:hover {
 	.page-id-25 #toolkit #toolkit-wrapper {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+	}
+}
+.page-id-25 #toolkit #design-toolkit ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.page-id-25 #toolkit #design-toolkit ul li {
+	list-style: none;
+}
+.page-id-25 #toolkit #design-toolkit ul li svg {
+	fill: currentColor;
+}
+@media (min-width: 800px) {
+	.page-id-25 #toolkit #design-toolkit {
+		padding: 0 3.6rem;
+	}
+}
+.page-id-25 #toolkit #develop-toolkit ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.page-id-25 #toolkit #develop-toolkit ul li {
+	list-style: none;
+	margin: 0 1.3rem;
+}
+.page-id-25 #toolkit #develop-toolkit ul li svg {
+	width: 2.5rem;
+}
+@media (min-width: 800px) {
+	.page-id-25 #toolkit #develop-toolkit {
+		padding: 0 2rem;
 	}
 }
 @media (min-width: 640px) {
@@ -1114,10 +1157,36 @@ footer #footer-links a:hover {
 .post-type-archive .list-work-item .para-wrapper {
 	margin-bottom: 0.7rem;
 	text-align: left;
+	display: flex;
+	align-items: center;
 }
 .post-type-archive .list-work-item .para-wrapper .list-work-item-para {
 	display: inline;
 	padding-bottom: 5rem;
+}
+.post-type-archive .list-work-item .para-wrapper ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.post-type-archive .list-work-item .para-wrapper ul li {
+	margin: 0 0.17rem;
+}
+@media (min-width: 350px) {
+	.post-type-archive .list-work-item .para-wrapper ul li {
+		margin: 0 0.5rem;
+	}
+}
+@media (min-width: 800px) {
+	.post-type-archive .list-work-item .para-wrapper ul li {
+		margin: 0 0.75rem;
+	}
+}
+.post-type-archive .list-work-item .para-wrapper ul li svg {
+	width: 3rem;
+	fill: currentColor;
 }
 @media (min-width: 640px) {
 	.post-type-archive .archive-work article {
@@ -1208,7 +1277,7 @@ footer #footer-links a:hover {
 	margin: 0;
 	padding: 0;
 }
-@media (min-width: 640px) {
+@media (min-width: 450px) {
 	.single-portfolio_work .tech-logos ul {
 		display: flex;
 		justify-content: space-around;
@@ -1220,6 +1289,7 @@ footer #footer-links a:hover {
 }
 .single-portfolio_work .tech-logos ul li svg {
 	width: 5rem;
+	fill: currentColor;
 }
 .single-portfolio_work #work-info {
 	margin: 5rem 1rem;

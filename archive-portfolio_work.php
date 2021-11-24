@@ -39,12 +39,18 @@ get_header();
 						<?php
 						if(have_rows('languages')): ?>
 						<div class='para-wrapper'>
-						<p class='list-work-item-para'>Languages: </p> <?php
-							while(have_rows('languages')):
-								the_row();
-								$sub_value=get_sub_field('code_language'); ?>
-								<p class='list-work-item-para'><?php echo $sub_value; ?></p>
-							<?php endwhile; ?>
+							<p class='list-work-item-para'>Languages: </p>
+							<ul> 
+							<?php
+							$dev_tools = get_field('language_choice');
+							foreach($dev_tools as $single_tool): ?>
+								<li class='list-work-item-para'>
+									<?php get_template_part('images/inline', $single_tool); ?>
+								</li>
+								<?php 
+							endforeach;
+							?>
+							</ul>
 						</div> <?php
 						endif;
 						?>

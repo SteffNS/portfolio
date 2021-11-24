@@ -29,7 +29,6 @@ get_header();
 				<?php endif;
 				?>
 			</div>
-
 			<section id='about-steffen'>
 				<?php
 				the_content();
@@ -37,33 +36,37 @@ get_header();
 			</section>
 			<?php
 			if(have_rows('tools')): ?>
-			<section id='toolkit'>
-				<h2>Toolkit</h2>
-				<section id='toolkit-wrapper'>
-					<div id='design-toolkit' class='toolkit'>
-						<h3>Design</h3>
-						<?php
-						while(have_rows('tools')):
-							the_row();
-							$sub_design = get_sub_field('design_tool'); ?>
-							<p><?php echo $sub_design; ?></p>
+				<section id='toolkit'>
+					<h2>Toolkit</h2>
+					<section id='toolkit-wrapper'>
+						<div id='design-toolkit' class='toolkit'>
+							<h3>Design</h3>
+							<ul>
 							<?php
-						endwhile;
-						?>
-					</div>
-					<div id='develop-toolkit' class='toolkit'>
-						<h3>Development</h3>
-						<?php
-						while(have_rows('tools')):
-							the_row();
-							$sub_develop = get_sub_field('developer_tool'); ?>
-							<p><?php echo $sub_develop; ?></p>
+							$dev_tools = get_field('design_tools');
+							foreach($dev_tools as $single_tool): ?>
+								<li>
+									<?php get_template_part('images/inline', $single_tool); ?>
+								</li>
+								<?php
+							endforeach; ?>
+							</ul>
+						</div>
+						<div id='develop-toolkit' class='toolkit'>
+							<h3>Development</h3>
+							<ul>
 							<?php
-						endwhile;
-						?>
-					</div>	
-				</section>			
-			</section>
+							$dev_tools = get_field('dev_tools');
+							foreach($dev_tools as $single_tool): ?>
+								<li>
+									<?php get_template_part('images/inline', $single_tool); ?>
+								</li>
+								<?php
+							endforeach; ?>
+							</ul>
+						</div>	
+					</section>			
+				</section>
 				<?php
 			endif;
 		endwhile; // End of the loop.

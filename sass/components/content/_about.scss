@@ -8,11 +8,12 @@
         }
     }
     #toolkit{
-        text-align: center;
+        padding-bottom: 3rem;
         p{
             margin: 1rem;
         }
         h3{
+            text-align: center;
             width: 10rem;
             margin: 1rem auto;
             border-left: 1px solid black;
@@ -22,6 +23,45 @@
             @media(min-width:$breakpoint-mobile){
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+            }
+        }
+        #design-toolkit{
+            ul{
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                li{
+                    list-style: none;
+                    svg{
+                        fill: currentColor;
+                    }
+                }
+            }
+            @media(min-width:$breakpoint-tablet){
+                padding: 0 3.6rem;
+            }
+        }
+        #develop-toolkit{
+            ul{
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-wrap: wrap;
+                li{
+                    list-style: none;
+                    margin: 0 1.3rem;
+                    svg{
+                        width: 2.5rem;
+                    }
+                }
+            }
+            @media(min-width:$breakpoint-tablet){
+                padding: 0 2rem;
             }
         }
     }

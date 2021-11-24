@@ -32,10 +32,32 @@
         .para-wrapper{
             margin-bottom: .7rem;
             text-align: left;
+            display: flex;
+            align-items: center;
 
             .list-work-item-para{
                 display: inline;
                 padding-bottom: 5rem;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                li{
+                    margin: 0 .17rem;
+                    @media(min-width: 350px){
+                        margin: 0 .5rem;
+                    }
+                    @media(min-width:$breakpoint-tablet){
+                        margin: 0 .75rem;
+                    }
+                    svg{
+                        width: 3rem;
+                        fill: currentColor;
+                    }
+                }
             }
         }
     }
