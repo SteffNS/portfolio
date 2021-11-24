@@ -5,6 +5,7 @@
         font-size: 1.1rem;
         a{
             color: currentColor;
+            text-decoration: none;
             &:hover{
                 color: $color__main;
             }

@@ -1003,6 +1003,7 @@ footer #footer-links a:hover {
 }
 .page-id-10 #intro-para a {
 	color: currentColor;
+	text-decoration: none;
 }
 .page-id-10 #intro-para a:hover {
 	color: #6300FF;
