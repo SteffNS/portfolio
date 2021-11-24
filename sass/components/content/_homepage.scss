@@ -1,7 +1,14 @@
 .page-id-10{
     #intro-para{
+        margin-top: 5rem;
         text-align: center;
         font-size: 1.1rem;
+        a{
+            color: currentColor;
+            &:hover{
+                color: $color__main;
+            }
+        }
     }
     #front-page-featured, #contact-me{
         a{

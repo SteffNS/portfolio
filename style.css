@@ -997,8 +997,15 @@ footer #footer-links a:hover {
 /* Home Page
 --------------------------------------------- */
 .page-id-10 #intro-para {
+	margin-top: 5rem;
 	text-align: center;
 	font-size: 1.1rem;
+}
+.page-id-10 #intro-para a {
+	color: currentColor;
+}
+.page-id-10 #intro-para a:hover {
+	color: #6300FF;
 }
 .page-id-10 #front-page-featured a, .page-id-10 #contact-me a {
 	color: #3D3D3D;

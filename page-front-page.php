@@ -26,7 +26,8 @@ get_header();
 			</div>
 
 			<section id='intro-para'>
-				<p>Hey there, I'm Steffen. I am a front end web developer based out of Vancouver, BC</p>
+				<p>Hey there, I'm Steffen. I am a front end web developer based out of Vancouver, BC!</p>
+				<p>This is my portfolio website, feel free to check out some of my <a href='./works'>projects</a> or read a bit more <a href='./about-me'>about me!</a></p>
 			</section>
 			<section id='front-page-featured'>
 				<h2>Check Out Some of My Featured Works</h2>
