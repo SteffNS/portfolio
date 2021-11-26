@@ -1225,7 +1225,12 @@ footer #footer-links a:hover {
 		margin: 0 0.5rem;
 	}
 }
-@media (min-width: 640px) {
+@media (min-width: 800px) {
+	.post-type-archive .archive-work article {
+		margin: 0 0.25rem;
+	}
+}
+@media (min-width: 825px) {
 	.post-type-archive .archive-work {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -1237,13 +1242,13 @@ footer #footer-links a:hover {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 }
-@media (min-width: 640px) {
+@media (min-width: 800px) {
 	.post-type-archive .archive-work .list-work-item {
 		border-bottom: none;
 		margin: 0 1rem;
 	}
 }
-@media (min-width: 800px) {
+@media (min-width: 1024px) {
 	.post-type-archive .archive-work .list-work-item {
 		margin: 0 2rem;
 	}

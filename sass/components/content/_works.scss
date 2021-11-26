@@ -72,8 +72,11 @@
             @media(min-width:$breakpoint-mobile){
                 margin: 0 .5rem;
             }
+            @media(min-width:$breakpoint-tablet){
+                margin: 0 .25rem;
+            }
         }
-        @media(min-width:$breakpoint-mobile){
+        @media(min-width:825px){
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
@@ -82,11 +85,11 @@
             grid-template-columns: 1fr 1fr 1fr;
         }
         .list-work-item{
-            @media(min-width: $breakpoint-mobile){
+            @media(min-width: $breakpoint-tablet){
                 border-bottom: none;
                 margin: 0 1rem;
             }
-            @media(min-width:$breakpoint-tablet){
+            @media(min-width:$breakpoint-desktop){
                 margin: 0 2rem;
             }
         }
