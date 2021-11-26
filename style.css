@@ -711,6 +711,14 @@ textarea {
 	display: block;
 	text-decoration: none;
 }
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a,
+.main-navigation .current_page_parent > a,
+.main-navigation .current-menu-ancestor > a {
+	color: #C099FF;
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -1041,17 +1049,28 @@ footer #footer-links a:hover {
 	padding: 1rem;
 	background-color: #00E7EB;
 	border-radius: 25px;
+	transition: 0.5s;
+}
+.page-id-10 #all-works a:hover {
+	transition: 0.5s;
+	box-shadow: 0px 0px 10px 3px #6300FF;
 }
 .page-id-10 #contact-me {
 	text-align: center;
 	margin-bottom: 2rem;
 }
 .page-id-10 #contact-me h3 {
+	display: inline-block;
 	margin: 0 auto;
 	background-color: #00E7EB;
 	width: 10rem;
 	border-radius: 35px;
 	padding: 1.2rem;
+	transition: 0.5s;
+}
+.page-id-10 #contact-me h3:hover {
+	transition: 0.5s;
+	box-shadow: 0px 0px 10px 3px #6300FF;
 }
 
 /* About Page
@@ -1161,6 +1180,11 @@ footer #footer-links a:hover {
 	text-align: center;
 	margin: 0 auto;
 	display: block;
+	transition: 0.5s;
+}
+.post-type-archive .list-work-item .list-project:hover {
+	transition: 0.5s;
+	box-shadow: 0px 0px 10px 3px #6300FF;
 }
 .post-type-archive .list-work-item .para-wrapper {
 	margin-bottom: 0.7rem;
@@ -1216,6 +1240,11 @@ footer #footer-links a:hover {
 @media (min-width: 640px) {
 	.post-type-archive .archive-work .list-work-item {
 		border-bottom: none;
+		margin: 0 1rem;
+	}
+}
+@media (min-width: 800px) {
+	.post-type-archive .archive-work .list-work-item {
 		margin: 0 2rem;
 	}
 }
@@ -1231,20 +1260,27 @@ footer #footer-links a:hover {
 .single-portfolio_work .wp-block-buttons {
 	justify-content: space-around;
 	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 .single-portfolio_work .wp-block-buttons .wp-block-button a {
 	background-color: #00E7EB;
 	color: #3D3D3D;
+	transition: 0.5s;
+}
+.single-portfolio_work .wp-block-buttons .wp-block-button a:hover {
+	transition: 0.5s;
+	box-shadow: 0px 0px 10px #6300FF;
 }
 @media (min-width: 640px) {
 	.single-portfolio_work .accordion {
-		max-width: 85%;
+		max-width: 60%;
 	}
 }
 .single-portfolio_work figure {
 	text-align: center;
 }
 .single-portfolio_work figure video {
+	margin: 4rem 0;
 	width: 95%;
 }
 @media (min-width: 640px) {
@@ -1285,7 +1321,7 @@ footer #footer-links a:hover {
 	margin: 0;
 	padding: 0;
 }
-@media (min-width: 450px) {
+@media (min-width: 400px) {
 	.single-portfolio_work .tech-logos ul {
 		display: flex;
 		justify-content: space-around;
@@ -1370,7 +1406,7 @@ footer #footer-links a:hover {
 .single-portfolio_work .nav-previous a {
 	text-decoration: none;
 	padding: 1rem;
-	background-color: #1C1217;
+	background-color: #6300FF;
 	border-radius: 40px;
 }
 @media (min-width: 800px) {
@@ -1390,7 +1426,7 @@ footer #footer-links a:hover {
 .single-portfolio_work .nav-next a {
 	text-decoration: none;
 	padding: 1.2rem;
-	background-color: #1C1217;
+	background-color: #6300FF;
 	border-radius: 40px;
 }
 @media (min-width: 800px) {
@@ -1416,6 +1452,16 @@ footer #footer-links a:hover {
 }
 .page-id-29 input {
 	max-width: 50%;
+}
+.page-id-29 .wpcf7-submit {
+	background-color: #3D3D3D;
+	color: white;
+	border: none;
+	transition: 0.5s;
+}
+.page-id-29 .wpcf7-submit:hover {
+	transition: 0.5s;
+	box-shadow: 0px 0px 10px 3px #693E51;
 }
 @media (min-width: 800px) {
 	.page-id-29 #contact-before {

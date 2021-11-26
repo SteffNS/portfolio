@@ -47,17 +47,28 @@
             padding: 1rem;
             background-color: #00E7EB;
             border-radius: 25px;
+            transition: .5s;
+            &:hover{
+                transition: .5s;
+                box-shadow: 0px 0px 10px 3px $color__main;
+            }
         }
     }
     #contact-me{
         text-align: center;
         margin-bottom: 2rem;
         h3{
+            display: inline-block;
             margin: 0 auto;
             background-color: #00E7EB;
             width: 10rem;
             border-radius: 35px;
             padding: 1.2rem;
+            transition: .5s;
+            &:hover{
+                transition: .5s;
+                box-shadow: 0px 0px 10px 3px $color__main;
+            }
         }
     }
 }
